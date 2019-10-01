@@ -1,0 +1,17 @@
+extends: airbnb
+plugins:
+  - react
+#   - import
+  - react-hooks
+env:
+  browser: true
+parser: babel-eslint
+rules:
+  react/jsx-filename-extension: [2, { "extensions": [".js", ".jsx"] }] # extension of jsx,js is fine
+  object-curly-newline: [0]
+  jsx-a11y/click-events-have-key-events: [0]
+  jsx-a11y/no-static-element-interactions: [0]
+  max-len: [0]
+  react/forbid-prop-types: [0]
+  react-hooks/rules-of-hooks: [2]
+  react-hooks/exhaustive-deps: [2]
