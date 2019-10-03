@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 
 export default function useParsingLink(input, delay) {
-  const [parsed, setParsed] = useState({ status: 'init', result: '' }); // status: init, parsing, done
+  const [parsed, setParsed] = useState({ status: 'init', result: '' }); // status: init, loading, done
   const { status, result } = parsed;
 
   useEffect(() => {

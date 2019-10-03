@@ -11,9 +11,9 @@ export default function App() {
 
   useEffect(() => {
     setTimeout(() => {
-      setMessages([{ id: uuidv4(), role: 'user1', text: 'mock fetch data', replies: [] }]);
+      setMessages([{ id: uuidv4(), role, text: 'mock fetch data', replies: [] }]);
     }, 3000);
-  }, []);
+  }, [role]);
 
   const onChangeRole = useCallback((r) => {
     setRole(r);
